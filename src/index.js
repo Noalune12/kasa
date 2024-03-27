@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home'
 import Error404 from './pages/404';
-import Logement from './pages/Logement';
+import Annonce from './pages/Annonce';
 import APropos from './pages/A-propos';
 import './style.scss';
 
@@ -18,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/a-propos" element={<APropos/>} />
-        <Route path="/logement" element={<Logement/>} />
+        <Route path="/annonce/:annonceId" element={<Annonce/>} />
         <Route path="*" element={<Error404/>} />
       </Routes>
       <Footer />

@@ -24,6 +24,7 @@ function Home () {
             {annonces.data.map((annonce) => (
                 <Card
                     key={annonce.id}
+                    link={`/annonce/${annonce.id}`}
                     title={annonce.title}
                     cover={annonce.cover}
                 />

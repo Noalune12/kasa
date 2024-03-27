@@ -1,8 +1,14 @@
-function Card({cover, title}) {
+import './style.scss'
+import { Link } from 'react-router-dom';
+
+
+function Card({cover, title, link}) {
     return (
         <div className="home-card">
-            <img src={cover} alt="" className="card-img"/>
-            <h2 className="card-title">{title}</h2>
+            <Link to={link}>
+                <img src={cover} alt="" className="card-img"/>
+                <h2 className="card-title">{title}</h2>
+            </Link>
         </div>
     );
 }
