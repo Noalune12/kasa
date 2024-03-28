@@ -1,0 +1,40 @@
+.slideshow {
+    position: relative;
+    margin-top: 20px;
+}
+
+.left-arrow, .right-arrow {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
+
+.left-arrow {
+    transform: rotate(-90deg);
+    top: 45%;
+    left: 1em;
+}
+
+.right-arrow {
+    transform: rotate(90deg);
+    right: 1em;
+    top: 42%;
+}
+
+.slide {
+    transform: scale(0.95);
+	transition-duration: 1s;
+    opacity: 0,5;
+    &.active {
+        width: 100%;
+        transform: scale(1);
+		opacity: 1;
+		transition-duration: 1s;
+    }
+    img {
+       width: 100%; 
+       height: 415px;
+       object-fit: cover;
+       border-radius: 15px;
+    }
+}
