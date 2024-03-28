@@ -1,3 +1,74 @@
 .annonce-page {
     padding: 0 60px;
 }
+
+.title-location-tags-host-rating {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.annonce-title {
+    font-size: 30px;
+    color: #ff6060;
+    font-weight: 500;
+    margin: 0;
+}
+
+.annonce-location {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.annonce-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #ff6060;
+        margin: 0;
+        margin-top: 20px;
+        padding: 5px 20px;
+        border-radius: 25px;
+        color: white;
+    }
+}
+
+.host-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .annonce-host {
+        display: flex;
+        padding-bottom: 15px;
+    }
+    .host-firstname-lastname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 5px;
+        padding-right: 10px;
+    }
+    .host-name {
+        margin: 0;
+        color: #ff6060;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .host-photo {
+        border-radius: 50%;
+        height: 65px;
+        object-fit: cover;
+    }
+}
+
+.description-equipements {
+    display: flex;
+    padding-top: 10px;
+    gap: 60px;
+}

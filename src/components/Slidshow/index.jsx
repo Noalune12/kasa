@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ArrowUp from '../../assets/arrow-up.png'
+import ArrowLeft from '../../assets/arrow-left.svg'
 import './style.scss'
 
 function Slideshow ({images}) {
@@ -16,10 +16,10 @@ function Slideshow ({images}) {
     return (
         <div className='slideshow'>
             {images.length > 1 && (
-                <img src={ArrowUp} className='left-arrow' onClick={prevSlide} alt='Previous'/>
+                <img src={ArrowLeft} className='left-arrow' onClick={prevSlide} alt='Previous'/>
             )}
             {images.length > 1 && (
-                <img src={ArrowUp} className='right-arrow' onClick={nextSlide} alt='Next'/>
+                <img src={ArrowLeft} className='right-arrow' onClick={nextSlide} alt='Next'/>
             )}
             {images.map((image, index) => (
                 <div key={index} className={index === current ? 'slide active' : 'slide'}>

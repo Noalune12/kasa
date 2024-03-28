@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 5px;
+}
+
+.empty-star, .full-star {
+    height: 28px;
+}
