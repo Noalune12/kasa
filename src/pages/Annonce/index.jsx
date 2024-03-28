@@ -5,6 +5,7 @@ import React from "react";
 import './style.scss'
 import Collapse from "../../components/Collapse";
 import Rating from "../../components/Rating";
+import Error404 from "../404";
 
 
 function Annonce () {
@@ -26,39 +27,44 @@ function Annonce () {
         return <p>Une erreur s'est produite</p>;
     }
 
-    const fullName = thisAnnonce.host.name;
-    const [firstName, lastName] = fullName.split(' ');
-    
+    if(!thisAnnonce) {
+        return <Error404 />
+    } else {
+        const fullName = thisAnnonce.host.name;
+        const [firstName, lastName] = fullName.split(' ');
+        
 
-    return (
-        <div className="annonce-page">
-            <Slideshow images={thisAnnonce.pictures} />
-            <div className="title-location-tags-host-rating">
-                <div className="title-location-tags">
-                    <h1 className="annonce-title">{thisAnnonce.title}</h1>
-                    <p className="annonce-location">{thisAnnonce.location}</p>
-                    <div className="annonce-tags">
-                        {thisAnnonce.tags.map((tag, index) =>
-                        <p key={`${tag}-${index}`}>{tag}</p>)}
-                    </div>
-                </div>
-                <div className="host-rating">
-                    <div className="annonce-host">
-                        <div className="host-firstname-lastname">
-                            <p className="host-name">{firstName}</p>
-                            <p className="host-name">{lastName}</p>
+        return (
+            <div className="annonce-page">
+                <Slideshow images={thisAnnonce.pictures} />
+                <div className="title-location-tags-host-rating">
+                    <div className="title-location-tags">
+                        <h1 className="annonce-title">{thisAnnonce.title}</h1>
+                        <p className="annonce-location">{thisAnnonce.location}</p>
+                        <div className="annonce-tags">
+                            {thisAnnonce.tags.map((tag, index) =>
+                            <p key={`${tag}-${index}`}>{tag}</p>)}
                         </div>
-                        <img src={thisAnnonce.host.picture} alt="host profile" className="host-photo"/>
                     </div>
-                    <Rating rate={thisAnnonce.rating}/>
-                </div>            
+                    <div className="host-rating">
+                        <div className="annonce-host">
+                            <div className="host-firstname-lastname">
+                                <p className="host-name">{firstName}</p>
+                                <p className="host-name">{lastName}</p>
+                            </div>
+                            <img src={thisAnnonce.host.picture} alt="host profile" className="host-photo"/>
+                        </div>
+                        <Rating rate={thisAnnonce.rating}/>
+                    </div>            
+                </div>
+                <div className="description-equipements">
+                    <Collapse title="Description" content={thisAnnonce.description} />
+                    <Collapse title="Equipements" content={thisAnnonce.equipments}/>
+                </div>
             </div>
-            <div className="description-equipements">
-                <Collapse title="Description" content={thisAnnonce.description} />
-                <Collapse title="Equipements" content={thisAnnonce.equipments}/>
-            </div>
-        </div>
-       );
+        ); 
+    }
+    
 }
 
 export default Annonce
