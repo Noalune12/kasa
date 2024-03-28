@@ -5,8 +5,14 @@
         font-size: 18px;
         color: white;
     } 
-    p {
+    ul {
+        padding: 10px 10px;
+        margin: 0;
+        list-style-type: none;
+    }
+    li {
         font-size: 14px;
+        line-height: 1.5;
     }
 }
 
