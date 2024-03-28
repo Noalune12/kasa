@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import ArrowUp from '../../assets/arrow-up.png'
-import ArrowDown from '../../assets/arrow-down.png'
+import ArrowLeft from '../../assets/arrow-left.svg'
 import './style.scss'
 
 
@@ -16,7 +15,7 @@ function Collapse({title, content}) {
             <li key={index}>{item}</li>
         ));
     } else {
-        contentList = <li>{content}</li>; // Afficher le contenu tel quel s'il n'est pas un tableau
+        contentList = <li>{content}</li>;
     }
 
 
@@ -24,9 +23,11 @@ function Collapse({title, content}) {
         <div className='collapse'>
             <button className='collapse-toggle'>
                 <h2>{title}</h2>
-                {isOpen ? <img onClick={toggleCollapse} src={ArrowDown} alt='Flèche vers le bas'/> : <img onClick={toggleCollapse} src={ArrowUp} alt='Flèche vers le haut'/>}
+                {isOpen ? <img onClick={toggleCollapse} src={ArrowLeft} alt='Flèche vers le bas' className='arrow-hide'/> : <img onClick={toggleCollapse} src={ArrowLeft} alt='Flèche vers le haut' className='arrow-show'/>}
             </button>
-            {isOpen && <ul>{contentList}</ul>}
+            <div className={`collapse-content ${isOpen ? 'show' : ''}`}>
+                {isOpen && <ul>{contentList}</ul>}
+            </div> 
         </div>
     );
 }
