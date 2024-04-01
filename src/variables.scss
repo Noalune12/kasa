@@ -3,5 +3,24 @@
     margin-right: 60px;
   }
 
-$primary-color : #ff6060
+$primary-color : #ff6060;
+
+$breakpoint-mobile: 481px;
+$breakpoint-tablette: 768px;
+
+@mixin mobile {
+  @media screen and (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (max-width: #{$breakpoint-tablette}) and (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+
+
+
 
