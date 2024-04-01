@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .annonce-page {
-    margin: 0 60px;
+    @include margin-60;
 }
 
 .title-location-tags-host-rating {
@@ -10,7 +12,7 @@
 
 .annonce-title {
     font-size: 30px;
-    color: #ff6060;
+    color: $primary-color;
     font-weight: 500;
     margin: 0;
 }
@@ -29,7 +31,7 @@
     p {
         font-size: 14px;
         font-weight: 700;
-        background-color: #ff6060;
+        background-color: $primary-color;
         margin: 0;
         margin-top: 20px;
         padding: 5px 20px;
@@ -56,7 +58,7 @@
     }
     .host-name {
         margin: 0;
-        color: #ff6060;
+        color: $primary-color;
         font-weight: 500;
         font-size: 16px;
     }

@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .home-page {
-    margin: 0 60px;
+    @include margin-60;
 }
 
 .home-banner {
