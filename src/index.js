@@ -9,6 +9,7 @@ import Annonce from './pages/Annonce';
 import APropos from './pages/A-propos';
 import './style.scss';
 
+document.title = "Kasa";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,4 +26,7 @@ root.render(
     </Router>
   </React.StrictMode>
 );
+
+
+
 
