@@ -7,9 +7,15 @@
     justify-content: center;
     @include margin-60;
     height: 50vh;
+    @include mobile {
+        margin: 15px;
+    }
     p {
         font-size: 20px;
         text-align: center;
+        @include mobile {
+            font-size: 16px;
+        }
     }
     .loader {
         border: 8px solid #f3f3f3; 

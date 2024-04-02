@@ -1,12 +1,26 @@
+@import '../../variables.scss';
+
 .home-card {
     width: 340px;
     position: relative;
+    @include mobile {
+        width: 100%;
+    }
+    @include tablette {
+        width: 45%;
+    }
     .card-img {
         width: 100%;
         height: 340px;
         object-fit: cover;
         border-radius: 15px;
         z-index: 1;
+        @include mobile {
+            height: 255px;
+        }
+        @include tablette {
+            height: 300px;
+        }
     }
     .card-overlay {
         position: absolute;
@@ -27,10 +41,19 @@
         width: 80%;
         font-weight: 500;
         z-index: 3;
+        @include mobile {
+            font-size: 14px;
+        }
+        @include tablette {
+            font-size: 14px;
+        }
     }
     &:hover {
         transform: scale(1.05);
         cursor: pointer;
+        @include mobile {
+            transform: none;
+        }
     }
 }
 

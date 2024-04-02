@@ -19,7 +19,7 @@ function Home () {
     <div className='home-page'>
         <div className='home-banner'>
             <img src= {Banner} alt='Banner Home Page' className='home-banner-img'></img>
-            <h1 className='home-banner-title'>Chez vous, partout et ailleurs</h1>
+            <h1 className='home-banner-title'>Chez vous,  <br className="mobile-only" />partout et ailleurs</h1>
         </div>  
         <div className='home-cards-container'>
             {annonces.data.map((annonce) => (

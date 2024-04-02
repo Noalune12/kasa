@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .slideshow {
     position: relative;
     margin-top: 20px;
@@ -8,10 +10,16 @@
     cursor: pointer;
     position: absolute;
     height: 60px;
+    @include mobile {
+        height: 24px;
+    }
+    @include tablette {
+        height: 48px;
+    }
 }
 
 .left-arrow {
-    top: 45%;
+    top: 43%;
     left: 1em;
     &:hover {
         transform: scale(1.05);
@@ -21,7 +29,7 @@
 .right-arrow {
     transform: rotate(180deg);
     right: 1em;
-    top: 42%;
+    top: 43%;
     &:hover {
         transform: rotate(180deg) scale(1.05);
     }
@@ -42,5 +50,11 @@
        height: 415px;
        object-fit: cover;
        border-radius: 15px;
+       @include mobile {
+        height: 255px;
+       }
+       @include tablette {
+        height: 330px;
+       }
     }
 }

@@ -2,6 +2,12 @@
 
 .a-propos-page {
     @include margin-60;
+    @include mobile {
+        margin: 10px 10px 20px 10px;
+    }
+    @include tablette {
+        margin: 20px;
+    }
 }
 
 .a-propos-banner-img {
@@ -12,9 +18,21 @@
     filter: brightness(50%);
     box-shadow: rgba(0, 0, 0, 0.15) 0 5px 2.6px;
     margin-bottom: 20px;
+    @include mobile {
+        height: 110px;
+    }
+    @include tablette {
+        height: 200px;
+    }
 }
 
 .a-propos-content {
     padding: 0 80px;
+    @include mobile {
+        padding: 0;
+    }
+    @include tablette {
+        padding: 0;
+    }
 }
     

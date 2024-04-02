@@ -6,6 +6,9 @@
     h2 {
         font-size: 18px;
         color: white;
+         @include mobile {
+            font-size: 16px;
+         }
     } 
     ul {
         padding: 10px 10px;
@@ -15,6 +18,9 @@
     li {
         font-size: 14px;
         line-height: 1.5;
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     &-content {
@@ -48,6 +54,9 @@
         img:hover {
             cursor: pointer;
         }
+        @include mobile {
+            height: 40px;
+        }
     }
 }
 
@@ -78,6 +87,10 @@
     padding: 0 10px;
     transform: rotate(90deg);
     transition: transform 0.3s ease;
+    @include mobile {
+        width: 24px;
+        height: 24px;
+     }
 
     &.open {
         transform: rotate(-90deg);

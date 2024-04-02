@@ -7,10 +7,16 @@
     @include margin-60;
     flex-direction: column;
     height: 50vh;
+    @include mobile {
+        margin: 15px;
+    }
     p {
         font-size: 20px;
         text-align: center;
         margin-bottom: 20px;
+        @include mobile {
+            font-size: 16px;
+        }
     }
     .exclamation-background {
         width: 60px; 
