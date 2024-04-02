@@ -20,6 +20,12 @@ $breakpoint-tablette: 768px;
   }
 }
 
+@mixin title-wrap {
+  @media screen and (max-width: 950px) and (min-width: #{$breakpoint-tablette}) {
+    @content;
+  }
+}
+
 
 
 

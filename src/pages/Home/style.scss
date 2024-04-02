@@ -19,9 +19,13 @@
         font-size: 45px;
         text-align: center;
         position: absolute;
-        top: 35%;
-        left: 10%;
-        right: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        @include title-wrap {
+            white-space: wrap;
+        }
     }
 }
 
