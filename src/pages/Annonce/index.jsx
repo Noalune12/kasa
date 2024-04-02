@@ -6,6 +6,8 @@ import './style.scss'
 import Collapse from "../../components/Collapse";
 import Rating from "../../components/Rating";
 import Error404 from "../404";
+import Error from '../../components/Error';
+import Loading from "../../components/Loading";
 
 
 function Annonce () {
@@ -21,10 +23,10 @@ function Annonce () {
     }
 
     if(annonces.isLoading) {
-        return <p>Chargement en cours...</p>;
+        return <Loading />;
     }
     if (annonces.error) {
-        return <p>Une erreur s'est produite</p>;
+        return <Error />;
     }
 
     if(!thisAnnonce) {

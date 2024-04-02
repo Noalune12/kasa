@@ -2,15 +2,16 @@ import Banner from '../../assets/banner.png'
 import './style.scss'
 import Card from '../../components/Card';
 import { useFetch } from '../../utils/usefetch'
+import Error from '../../components/Error';
+import Loading from '../../components/Loading';
 
 function Home () {
     const annonces = useFetch(window.location.origin + '/logements.json')
-    //Ajouter un loading et error en components
     if(annonces.isLoading) {
-        return <p>Chargement en cours...</p>;
+        return <Loading />;
     }
     if (annonces.error) {
-        return <p>Une erreur s'est produite</p>;
+        return <Error />;
     }
     console.log(annonces)
 
