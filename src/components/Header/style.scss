@@ -39,4 +39,9 @@ header {
 
 .nav-links a:hover {
     text-decoration: underline;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 0 10px;
+}
+
+.nav-links .active {
+    text-decoration: underline; 
 }
