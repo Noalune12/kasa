@@ -21,6 +21,9 @@ function Slideshow ({images}) {
             {images.length > 1 && (
                 <img src={ArrowLeft} className='right-arrow' onClick={nextSlide} alt='Next'/>
             )}
+            {images.length > 1 && (
+                <p className='slide-number'>{current + 1}/{images.length}</p>
+            )}
             {images.map((image, index) => (
                 <div key={index} className={index === current ? 'slide active' : 'slide'}>
                     {index === current && <img key={index} src={image} alt={`${index}`}/>}
