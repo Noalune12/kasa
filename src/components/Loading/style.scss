@@ -10,13 +10,7 @@
     @include mobile {
         margin: 15px;
     }
-    p {
-        font-size: 20px;
-        text-align: center;
-        @include mobile {
-            font-size: 16px;
-        }
-    }
+    
     .loader {
         border: 8px solid #f3f3f3; 
         border-top: 8px solid $primary-color; 
@@ -30,5 +24,13 @@
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        @include mobile {
+            font-size: 16px;
+        }
     }
 }

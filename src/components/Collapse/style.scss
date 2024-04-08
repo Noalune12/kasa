@@ -3,6 +3,7 @@
 .collapse {
     margin-bottom: 20px;
     flex: 1;
+
     h2 {
         font-size: 18px;
         color: white;
@@ -10,11 +11,13 @@
             font-size: 16px;
          }
     } 
+
     ul {
         padding: 10px 10px;
         margin: 0;
         list-style-type: none;
     }
+    
     li {
         font-size: 14px;
         line-height: 1.5;
@@ -58,6 +61,26 @@
             height: 40px;
         }
     }
+
+    .arrow {
+        width: 32px;
+        height: 32px;
+        padding: 0 10px;
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+        @include mobile {
+            width: 24px;
+            height: 24px;
+         }
+    
+        &.open {
+            transform: rotate(-90deg);
+        }
+    
+        &.transition {
+            transition: transform 0.3s ease;
+        }
+    }
 }
 
 
@@ -81,24 +104,6 @@
 //     }
 // }
 
-.arrow {
-    width: 32px;
-    height: 32px;
-    padding: 0 10px;
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-    @include mobile {
-        width: 24px;
-        height: 24px;
-     }
 
-    &.open {
-        transform: rotate(-90deg);
-    }
-
-    &.transition {
-        transition: transform 0.3s ease;
-    }
-}
 
 

@@ -3,58 +3,58 @@
 .slideshow {
     position: relative;
     margin-top: 20px;
-}
 
-.left-arrow, .right-arrow {
-    z-index: 1;
-    cursor: pointer;
-    position: absolute;
-    height: 60px;
-    @include mobile {
-        height: 24px;
+    .left-arrow, .right-arrow {
+        z-index: 1;
+        cursor: pointer;
+        position: absolute;
+        height: 60px;
+        @include mobile {
+            height: 24px;
+        }
+        @include tablette {
+            height: 48px;
+        }
     }
-    @include tablette {
-        height: 48px;
+    
+    .left-arrow {
+        top: 43%;
+        left: 1em;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
-}
+    
+    .right-arrow {
+        transform: rotate(180deg);
+        right: 1em;
+        top: 43%;
+        &:hover {
+            transform: rotate(180deg) scale(1.05);
+        }
+    }
 
-.left-arrow {
-    top: 43%;
-    left: 1em;
-    &:hover {
-        transform: scale(1.05);
-    }
-}
-
-.right-arrow {
-    transform: rotate(180deg);
-    right: 1em;
-    top: 43%;
-    &:hover {
-        transform: rotate(180deg) scale(1.05);
-    }
-}
-
-.slide {
-    transform: scale(0.95);
-	transition-duration: 1s;
-    opacity: 0.5;
-    &.active {
-        width: 100%;
-        transform: scale(1);
-		opacity: 1;
-		transition-duration: 1s;
-    }
-    img {
-       width: 100%; 
-       height: 415px;
-       object-fit: cover;
-       border-radius: 15px;
-       @include mobile {
-        height: 255px;
-       }
-       @include tablette {
-        height: 330px;
-       }
+    .slide {
+        transform: scale(0.95);
+        transition-duration: 1s;
+        opacity: 0.5;
+        &.active {
+            width: 100%;
+            transform: scale(1);
+            opacity: 1;
+            transition-duration: 1s;
+        }
+        img {
+           width: 100%; 
+           height: 415px;
+           object-fit: cover;
+           border-radius: 15px;
+           @include mobile {
+            height: 255px;
+           }
+           @include tablette {
+            height: 330px;
+           }
+        }
     }
 }

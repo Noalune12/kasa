@@ -8,130 +8,128 @@
     @include tablette {
         margin: 20px;
     }
-}
 
-.title-location-tags-host-rating {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    @include mobile {
-        flex-direction: column;
-        gap: 15px;
-    }
-    @include tablette {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-
-    .annonce-title {
-        font-size: 30px;
-        color: $primary-color;
-        font-weight: 500;
-        margin: 0;
-        @include mobile {
-            font-size: 22px;
-        }
-        @include tablette {
-            font-size: 26px;
-        }
-    }
-    
-    .annonce-location {
-        margin: 0;
-        margin-top: 10px;
-        font-size: 16px;
-        font-weight: 500;
-        @include mobile {
-            font-size: 14px;
-        }
-    }
-    
-    .annonce-tags {
+    .title-location-tags-host-rating {
+        margin: 20px 0;
         display: flex;
-        align-items: center;
-        gap: 10px;
-        p {
-            font-size: 14px;
-            font-weight: 700;
-            background-color: $primary-color;
-            margin: 0;
-            margin-top: 20px;
-            padding: 5px 20px;
-            border-radius: 10px;
-            color: white;
-            @include mobile {
-                font-size: 10px;
-                padding: 5px 10px;
-            }
-            @include tablette {
-                font-size: 12px;
-                padding: 5px 10px;
-            }
-        }
-    }
-    
-    .host-rating {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: space-between;
         @include mobile {
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: space-between;
-        }
-        @include tablette {
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .annonce-host {
-            display: flex;
-            padding-bottom: 15px;
-        }
-        .host-firstname-lastname {
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 5px;
-            padding-right: 10px;
+            gap: 15px;
         }
-        .host-name {
-            margin: 0;
+        @include tablette {
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .annonce-title {
+            font-size: 30px;
             color: $primary-color;
             font-weight: 500;
-            font-size: 16px;
+            margin: 0;
             @include mobile {
-                font-size: 12px;
-            }
-        }
-        .host-photo {
-            border-radius: 50%;
-            height: 65px;
-            object-fit: cover;
-            @include mobile {
-                height: 42px;
+                font-size: 22px;
             }
             @include tablette {
-                height: 54px;
+                font-size: 26px;
             }
         }
+        
+        .annonce-location {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+        
+        .annonce-tags {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p {
+                font-size: 14px;
+                font-weight: 700;
+                background-color: $primary-color;
+                margin: 0;
+                margin-top: 20px;
+                padding: 5px 20px;
+                border-radius: 10px;
+                color: white;
+                @include mobile {
+                    font-size: 10px;
+                    padding: 5px 10px;
+                }
+                @include tablette {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        
+        .host-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @include mobile {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @include tablette {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .annonce-host {
+                display: flex;
+                padding-bottom: 15px;
+            }
+            .host-firstname-lastname {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 5px;
+                padding-right: 10px;
+            }
+            .host-name {
+                margin: 0;
+                color: $primary-color;
+                font-weight: 500;
+                font-size: 16px;
+                @include mobile {
+                    font-size: 12px;
+                }
+            }
+            .host-photo {
+                border-radius: 50%;
+                height: 65px;
+                object-fit: cover;
+                @include mobile {
+                    height: 42px;
+                }
+                @include tablette {
+                    height: 54px;
+                }
+            }
+        }
+        
     }
     
-}
-
-
-.description-equipements {
-    display: flex;
-    padding-top: 10px;
-    gap: 60px;
-    @include mobile {
-        flex-direction: column;
-        gap: 10px;
-    }
-    @include tablette {
-        flex-direction: column;
-        gap: 15px;
+    .description-equipements {
+        display: flex;
+        padding-top: 10px;
+        gap: 60px;
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;
+        }
+        @include tablette {
+            flex-direction: column;
+            gap: 15px;
+        }
     }
 }

@@ -7,11 +7,11 @@
     @include mobile {
         gap: 0;
     }
-}
 
-.empty-star, .full-star {
-    height: 28px;
-    @include mobile {
-        height: 24px;
+    .empty-star, .full-star {
+        height: 28px;
+        @include mobile {
+            height: 24px;
+        }
     }
 }
