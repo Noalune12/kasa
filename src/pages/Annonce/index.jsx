@@ -13,7 +13,6 @@ import Loading from "../../components/Loading";
 function Annonce () {
     const annonces = useFetch(window.location.origin + '/logements.json')
     const {annonceId} = useParams();
-    console.log(annonceId)
 
     let thisAnnonce 
     if(annonces.data) {

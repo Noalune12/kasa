@@ -13,7 +13,6 @@ function Home () {
     if (annonces.error) {
         return <Error />;
     }
-    console.log(annonces)
 
         return (
     <div className='home-page'>

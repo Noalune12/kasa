@@ -19,7 +19,6 @@ function Collapse({title, content}) {
         //     : `${contentCollapse.current.scrollHeight}px`
         //     )
     };
-    console.log(height)
 
     let contentList
     if (Array.isArray(content)) {

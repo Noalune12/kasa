@@ -32,14 +32,13 @@
         margin-top: 20px;
         animation: bounce 0.5s infinite alternate; 
         font-weight: 500;
-    }
-
-    @keyframes bounce {
-        0% {
-            transform: translateY(-5px);
-        }
-        100% {
-            transform: translateY(-15px);
+        @keyframes bounce {
+            0% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(-15px);
+            }
         }
     }
 }

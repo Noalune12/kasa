@@ -48,8 +48,8 @@
 
     .slide {
         transform: scale(0.95);
-        transition-duration: 1s;
         opacity: 0.5;
+        transition-duration: 1s;
         &.active {
             width: 100%;
             transform: scale(1);
