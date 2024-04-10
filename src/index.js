@@ -14,15 +14,19 @@ document.title = "Kasa";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/a-propos" element={<APropos/>} />
-        <Route path="/annonce/:annonceId" element={<Annonce/>} />
-        <Route path="*" element={<Error404/>} />
-      </Routes>
-      <Footer />
+     <Router>
+      <div className="app-wrapper">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/annonce/:annonceId" element={<Annonce />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   </React.StrictMode>
 );

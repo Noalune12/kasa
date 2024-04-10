@@ -21,7 +21,7 @@ $breakpoint-tablette: 768px;
 }
 
 @mixin link-wrap {
-  @media screen and (max-width: 371px) {
+  @media screen and (max-width: 341px) {
     @content;
   }
 }

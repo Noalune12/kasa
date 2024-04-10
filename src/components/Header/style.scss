@@ -10,6 +10,9 @@ header {
     @include mobile {
         margin: 10px 10px 20px 10px;
     }
+    // @include link-wrap {
+    //     justify-content: flex-start;
+    // }
     @include tablette {
         margin: 20px;
     }
@@ -32,13 +35,13 @@ header {
         margin-left: 40px;
         flex-wrap: wrap;
         @include mobile {
-            font-size: 15px;
-            margin-left: 20px;
+            font-size: 13px;
+            margin-left: 15px;
             text-transform: uppercase;
         }
         @include link-wrap {
-            // display: flex;
-            // flex-direction: column;
+            display: flex;
+            flex-direction: column;
             font-size: 13px;
             padding-top: 5px;
             margin-left: 10px;
