@@ -4,8 +4,13 @@ import Card from '../../components/Card';
 import { useFetch } from '../../utils/usefetch'
 import Error from '../../components/Error';
 import Loading from '../../components/Loading';
+import React, { useEffect } from 'react';
 
 function Home () {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const annonces = useFetch(window.location.origin + '/logements.json')
     if(annonces.isLoading) {
         return <Loading />;

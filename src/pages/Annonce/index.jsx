@@ -1,7 +1,7 @@
 import Slideshow from "../../components/Slidshow";
 import { useFetch } from '../../utils/usefetch'
 import { useParams } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from 'react';
 import './style.scss'
 import Collapse from "../../components/Collapse";
 import Rating from "../../components/Rating";
@@ -11,6 +11,10 @@ import Loading from "../../components/Loading";
 
 
 function Annonce () {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const annonces = useFetch(window.location.origin + '/logements.json')
     const {annonceId} = useParams();
 
