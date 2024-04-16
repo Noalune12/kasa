@@ -14,7 +14,11 @@ document.title = "Kasa";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+<<<<<<< HEAD
      <Router basename='Kasa'>
+=======
+     <Router basename="/Kasa">
+>>>>>>> ef80e5a27bf6447c9b0e8e931d5c54ce406ecd0d
       <div className="app-wrapper">
         <Header />
         <div className="content">
