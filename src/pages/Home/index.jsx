@@ -11,7 +11,7 @@ function Home () {
         window.scrollTo(0, 0);
       }, []);
 
-    const annonces = useFetch(window.location.origin + '/Kasa/logements.json')
+    const annonces = useFetch(window.location.origin + '/kasa/logements.json')
     if(annonces.isLoading) {
         return <Loading />;
     }
