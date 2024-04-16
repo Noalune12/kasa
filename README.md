@@ -11,7 +11,7 @@ Implémenter le front-end d’une application en utilisant React et React Router
 
 **Installation**
 1. Cloner le repository:
-git clone https://github.com/Noalune12/kasa-projet-5.git
+git clone https://github.com/Noalune12/kasa.git
 
 2. Installer toutes les dépendances pour le front-end:
 npm install ou yarn
