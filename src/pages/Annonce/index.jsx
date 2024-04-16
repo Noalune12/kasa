@@ -15,7 +15,7 @@ function Annonce () {
         window.scrollTo(0, 0);
       }, []);
 
-    const annonces = useFetch(window.location.origin + '/logements.json')
+    const annonces = useFetch(window.location.origin + '/Kasa/logements.json')
     const {annonceId} = useParams();
 
     let thisAnnonce 

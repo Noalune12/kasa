@@ -18,4 +18,4 @@ npm install ou yarn
 
 3. Lancer le front-end:
 npm start ou yarn start
-Le front-end sera lancé à l'URL: http://localhost:3000/.
+Le front-end sera lancé à l'URL: http://localhost:3000/Kasa.
