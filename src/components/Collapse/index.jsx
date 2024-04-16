@@ -14,10 +14,6 @@ function Collapse({title, content}) {
 
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
-        // setHeight (isOpen === false
-        //     ? '0px'
-        //     : `${contentCollapse.current.scrollHeight}px`
-        //     )
     };
 
     let contentList
@@ -34,8 +30,6 @@ function Collapse({title, content}) {
         <div className='collapse'>
             <button className='collapse-toggle'>
                 <h2>{title}</h2>
-                {/* {isOpen ? <img onClick={toggleCollapse} src={ArrowLeft} alt='Flèche vers le bas' className='arrow-hide'/>
-                 : <img onClick={toggleCollapse} src={ArrowLeft} alt='Flèche vers le haut' className='arrow-show'/>} */}
                 <img src={ArrowLeft} alt='Flèche' className={`arrow ${isOpen ? 'open' : ''}`} onClick={toggleCollapse}/>
             </button>
             <div ref={contentCollapse} className={`collapse-content ${isOpen ? 'show' : '' } `} style={{height: `${height}`}} >
