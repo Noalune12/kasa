@@ -11,7 +11,16 @@ function Home () {
         window.scrollTo(0, 0);
       }, []);
 
-    const annonces = useFetch(window.location.origin + '/logements.json')
+      let jsonPath;
+    if (process.env.NODE_ENV === 'production') {
+        // Sur GitHub Pages
+        jsonPath = '/logements.json';
+    } else {
+        // En local
+        jsonPath = window.location.origin + '/logements.json';
+    }
+
+    const annonces = useFetch(jsonPath)
     if(annonces.isLoading) {
         return <Loading />;
     }
