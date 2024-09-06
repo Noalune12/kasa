@@ -10,12 +10,12 @@ Implémenter le front-end d’une application en utilisant React et React Router
 * Initialiser une application avec Create React App
 
 **Installation**
-1. Cloner le repository:
-git clone https://github.com/Noalune12/kasa.git
+1. Cloner le repository:  
+   `git clone https://github.com/Noalune12/kasa.git`
 
-2. Installer toutes les dépendances pour le front-end:
-npm install ou yarn
+2. Installer toutes les dépendances pour le front-end:  
+   `npm install` ou `yarn`
 
-3. Lancer le front-end:
-npm start ou yarn start
-Le front-end sera lancé à l'URL: http://localhost:3000/kasa.
+3. Lancer le front-end:  
+   `npm start` ou `yarn`  
+   Le front-end sera lancé à l'URL: http://localhost:3000/kasa.
